@@ -1,16 +1,23 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+### Introduction
+I am currently enrolled for the second year of the Erasmus Mundus Global Studies MA program at the University of Vienna. I have a research interest in global history with a focus on China, especially the exchange of goods, ideas and migration in pre-modern times. I created this website as an assignment of a digital tools & techniques class at the University of Vienna and I plan to share contents related to my research interests.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
 
-What else do you need?
+### Personal data
+* Name: Sebestyén Hompot
+* Born: 1991-02-19, Budapest (Hungary)
 
-### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### Educational background
+* 2010-2014: BA in "Eastern Languages and Cultures, Chinese Specialization" at ELTE University (Hungary)
+* 2014-2017: MA in "Chinese Language and Scripts (汉语言文字学)" at Xiamen University 厦门大学 (China)
+* 2017-2018: MA (first year) in "Global Studies" at Ghent University (Belgium)
+* 2018-: MA (second year) in "Global Studies" at University of Vienna (Austria)
+
+
+### Current project
+Currently I am working on my MA thesis. My research topic is the evaluation of China's pre-modern [tributary system](https://en.wikipedia.org/wiki/Imperial_Chinese_Tributary_System) in current global historiography.
