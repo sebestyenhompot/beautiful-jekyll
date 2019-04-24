@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Georeferencing Assignment: Fourty cities you would not think are located (also) in the U.S."
+title: "Georeferencing Assignment: Forty cities you would not think are located (also) in the U.S."
 ---
 
 For the georeferencing assignment I used two old maps (one dated to 1843, the other not dated) of the United States.
