@@ -60,5 +60,24 @@ Warsaw, Illinois, -91.726,40.328,-91.726,40.328
 Warsaw, Indiana, -85.462,40.581,-85.462,40.581  
 Warsaw, Missouri, -93.686,38.221,-93.686,38.221  
 
-Meanwhile, I would also like to point out some problems I came across during completing the assignment.
-Since both maps have a coordinate system I did the georeferncing by choosing 
+Meanwhile, I would also like to point out some issues I came across during completing the assignment.
+Since both maps have coordinate systems I did the georeferncing by the manual input of the coordinates in their four corners.
+Therefore, a certain degree of inaccuracy can be expected, although based on some double-checking on Google Maps, I do not think it is
+beyond 1 degree.  
+Longitudes on the second map are based on the position of Washington D.C. After checking out the city's position on Google Maps, I
+concluded that the map's 0° longitude is equal to -77° (West) of the international standard (based on Greenwich, UK). I did the input of
+the corner coordinates according to this.  
+One of the difficulties was that when I added the Google Maps and OpenStreetMaps layers in QGIS, it apparently displays incorrect
+coordinates for me. For example, [the coordinates of New York City](https://www.latlong.net/place/new-york-city-ny-usa-1848.html) are apparently ca. "-74 West, 41 North" and not "-8234229.297 West, 4970380.761 North" as displayed in the Google Maps layer inside QGIS.
+I would also like to note that when opening Google Maps in Chrome, it works with the correct coordinates.  
+When I tried to connect the layer of the maps used for the project and the Google Maps layer (for using the "From Map Canvas" function
+to add coordinates), QGIS displayed both the correct and incorrect coordinates on the left side (under 'Coordinate Capture', see attached image below): 
+  
+![](/img/georeferencing_issues1.png)    
+  
+However, upon clicking on the point I wished to add, it only captured the incorrect ones (see second image below):  
+![](/img/georeferencing_issues2.png)  
+
+
+
+
