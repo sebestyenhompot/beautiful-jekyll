@@ -6,7 +6,7 @@ title: "Georeferencing Assignment: Forty cities you would not think are located 
 For the georeferencing assignment I used two old maps (one dated to 1843, the other not dated) of the United States.
 I found it exciting that **many cities in the U.S. are actually named after cities in other countries**.  
 
-For obvious historical reasons, British cities play prominently (Liverpool and Manchaster apparently have several twins on the other side of the Atlantic) but
+For obvious historical reasons, British cities play prominently (Liverpool and Manchester apparently have several twins on the other side of the Atlantic) but
 there are also many city names of Greek background (Athens, Ithaca, at least two Spartas) and others with origins from countries as diverse as India,
 Poland and Saudi Arabia (Delhi, at least three Warsaws, Medina). **Vienna** also has its twin city located in [Illinois](https://en.wikipedia.org/wiki/Vienna,_Illinois).  
 
@@ -48,8 +48,8 @@ Florence, Georgia, -85.144,32.025,-85.144,32.025
 Lima, Indiana, -85.616,41.682,-85.616,41.682  
 Liverpool, Mississippi, -90.383,32.592,-90.383,32.592  
 Liverpool, Texas, -95.476,29.178,-95.476,29.178  
-Manchaster, Kentucky, -83.717,37.211,-83.717,37.211  
-Manchaster, Virginia, -77.459,37.470,-77.459,37.470  
+Manchester, Kentucky, -83.717,37.211,-83.717,37.211  
+Manchester, Virginia, -77.459,37.470,-77.459,37.470  
 Medina, Ohio, -81.869,41.169,-81.869,41.169  
 Montpelier, Indiana, -85.462,40.581,-85.462,40.581  
 Singapore, Michigan, -86.307,42.683,-86.307,42.683  
