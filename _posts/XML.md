@@ -3,7 +3,8 @@ layout: post
 title: Explaining the XML Assignment
 ---
 
-(1/A) For creating the cleaned copies of the Perseus XML files, I took the following steps:  
+### 1/A. Creating the cleaned copies of the Perseus XML files
+For creating the cleaned copies of the Perseus XML files, I took the following steps:  
 
 1. Importing the RegEx module into Python: `import re`.  
 
@@ -32,4 +33,9 @@ for file in lof:
 
 I could not, however, figure out how to set the target folder for the new files, therefore it was by default saved into my
 `Documents` folder. Using 'date of creation' based listing, I selected the new files manually and moved them into a new folder
-created for this assignment.
+created for this assignment.  
+
+
+### 1/B. Splitting issues into articles
+</Pubplace> <date value=".*?" authname
+</div3>
