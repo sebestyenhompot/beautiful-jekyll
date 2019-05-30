@@ -145,7 +145,7 @@ processResults("freqList.csv")
 However, this returned the following error message and I could not figure out why splitting `d` into the list `d1` was unsuccessfull:
 ![](/img/text_to_map2.png)  
 
-Following this, 
+Following this, representing the data on map would have involved the steps discussed during the class on [Georeferencing](https://univie-tnt-2019.github.io/05/) ("Adding Delimited Text Layer") and data-based styling of the layer (for which I found a description [here](http://learngis.uk/proportional-symbol-map-qgis-2-18/)).
 
 
 
