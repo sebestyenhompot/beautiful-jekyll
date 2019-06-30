@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Progress with the Pandoc Assignment
+title: Pandoc assignment
 ---
 
 After creating the Markdown version of the assigned text (by McCarty) I was able to convert it to PDF using pandoc (except for the Greek letters):
