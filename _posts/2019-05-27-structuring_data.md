@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Progress with the data structuring assignment
+title: Class 9 Structuring Data Assignment
 ---
 
 I tried using the following method: First collecting all the articles into one text file and removing the #ID tag and data, the other 
