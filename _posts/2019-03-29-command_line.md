@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Class 2 Codecademy assignment 'Learn the Command Line' completed
+title: Class 2 Codecademy Assignment 'Learn the Command Line' Completed
 ---
 
 The screenshots of the completed Codecademy assignment 'Learn the Command Line' for Class 2 are here:
