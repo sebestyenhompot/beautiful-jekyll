@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Class 3 GIT and Markdown learning assignments completed
+title: Class 3 GIT and Markdown Assignments Completed
 ---
 
 The screenshots of the 'Learn GIT' assignment completed on Codeacademy are here:  
