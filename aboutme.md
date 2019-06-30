@@ -4,7 +4,7 @@ title: About me
 ---
 
 ### Introduction
-I am currently enrolled for the second year of the Erasmus Mundus Global Studies MA program at the University of Vienna. I have a research interest in global history with a focus on China, especially the exchange of goods, ideas and migration in pre-modern times. I created this website as an assignment of a digital tools & techniques class at the University of Vienna and I plan to share contents related to my research interests.  
+I am currently enrolled for the second year of the Erasmus Mundus Global Studies MA program at the University of Vienna. I have been admitted to the PhD program in Sinology at the University of Vienna starting from October 2019. My primary research interest is global history with a focus on China, especially the exchange of goods, ideas and migration in pre-modern times. I created this website as an assignment of a digital tools & techniques course at the University of Vienna and will share my solutions for the assignments of the course here.
 
 
 ### Personal data
@@ -20,4 +20,4 @@ I am currently enrolled for the second year of the Erasmus Mundus Global Studies
 
 
 ### Current project
-Currently I am working on my MA thesis. My research topic is the evaluation of China's pre-modern [tributary system](https://en.wikipedia.org/wiki/Imperial_Chinese_Tributary_System) in current global historiography.
+Currently I am working on my MA thesis. The topic of my MA thesis is the discourse analysis of current mainland Chinese academic discourse on China's pre-modern [tributary system](https://en.wikipedia.org/wiki/Imperial_Chinese_Tributary_System). The chosen topic of my future PhD dissertation is the critical discourse analysis of current Chinese historiography on the voyages of 15th century Muslim Chinese admiral [Zheng He](https://en.wikipedia.org/wiki/Zheng_He) around the Indo-Pacific maritime region, visiting various ports in Southeast Asia, South Asia, the Middle East and East Africa.
