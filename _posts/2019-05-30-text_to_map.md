@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text-to-Map Assignment
+title: Class 10 Text-to-Map Assignment
 ---
 
 For this week's assignment, I used the codes of the [next lesson](https://univie-tnt-2019.github.io/11/) as an aid:
