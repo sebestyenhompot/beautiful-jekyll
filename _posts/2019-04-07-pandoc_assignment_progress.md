@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Class 4 Pandoc Assignment
+title: Class 4 Pandoc Assignment Completed
 ---
 
-After creating the Markdown version of the assigned text (by McCarty) I was able to convert it to PDF using pandoc (except for the Greek letters):
+After creating the Markdown version of the assigned TXT file, I converted it using the following commands:
 
-[McCarty.pdf](/img/HOMPOT_Pandoc_assignment_v1.pdf)
+pandoc -f markdown -t latex -o main.pdf --filter pandoc-citeproc main.md  
 
-I was able to create the HTML file as well, however, it remained in plain text format:
+pandoc -f markdown -t html -o main.html --filter pandoc-citeproc main.md  
 
-[McCarty.html](/img/HOMPOT_Pandoc_assignment_v1.html)
+pandoc -f markdown -t docx -o main.docx --filter pandoc-citeproc main.md  
 
-As for the DOCX version, although the file was created, after opening I received the error message "the file is corrupted and cannot be opened" without any further explanation.
-At the class I did not have any problems and I did everything using the same commands as during the class. I also followed the template while editing the Markdown file. 
-I hope to find out during the next class what caused these problems.
+See the resulting files here:  
+[McCarty PDF](/img/pandoc.pdf)  
+[McCarty HTML](/img/pandoc.html)  
+[McCarty DOCX](/img/pandoc.docx)  
+
