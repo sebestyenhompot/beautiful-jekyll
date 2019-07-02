@@ -147,6 +147,10 @@ generate("1862")
 generate("1863")
 generate("1864")
 generate("1865")
+
+#I also generated the TSV file for December 1865 and December 30th, 1865, to demonstrate that the code works for months and days as well.
+generate("1865-12")
+generate("1865-12-30")
 ```  
 
 The resulting files look like this:
@@ -276,14 +280,14 @@ def match(freqFile, dicToMatch):
                 count += 1
 ```  
 
-The two TSV files `coord.tsv` and `coord_NA.tsv` (for entries without coordinates) is created, with the header `tgnID\tplacename\tlat\tlon\tfreq\n`:  
+The matched TSV files are created by adding `_coord.tsv` and `_coord_NA.tsv` (for entries without coordinates) to the original filename. All the new TSV files will include the header `tgnID\tplacename\tlat\tlon\tfreq\n`:  
 ```python
     header = "tgnID\tplacename\tlat\tlon\tfreq\n"
 
-    with open(target+"coord.tsv", "w", encoding="utf8") as f9a:
+    with open(freqFile+"_coord.tsv", "w", encoding="utf8") as f9a:
         f9a.write(header + "\n".join(dataNew))
 
-    with open(target+"coord_NA.tsv", "w", encoding="utf8") as f9b:
+    with open(freqFile+"_coord_NA.tsv", "w", encoding="utf8") as f9b:
         f9b.write(header + "\n".join(dataNewNA))
 
     print("%d item have not been matched..." % count)
@@ -299,11 +303,16 @@ match(target+"dispatch_toponyms_1862.tsv", dictionary)
 match(target+"dispatch_toponyms_1863.tsv", dictionary)
 match(target+"dispatch_toponyms_1864.tsv", dictionary)
 match(target+"dispatch_toponyms_1865.tsv", dictionary)
+match(target+"dispatch_toponyms_1865-12.tsv", dictionary)
+match(target+"dispatch_toponyms_1865-12-30.tsv", dictionary)
 ```  
-The resulting TSV files look like this:  
-![](/img/coord.png)  
+The resulting TSV files look like this (examples of the 1865, 1865-12 and 1865-12-30/NA TSV file):  
 
-![](/img/coordNA.png)  
+![](/img/toponymcoord1865.png)  
+
+![](/img/toponymcoord1865-12.png)  
+
+![](/img/toponymcoordna1865-12-30.png)  
 
 Following this, I opened QGIS, added the raster layer we used for the Georeferencing assignment (1843 US map), clicked on 'Add Delimited Text Layer' and added `coord.tsv`. I followed the instructions on [this website](http://learngis.uk/proportional-symbol-map-qgis-2-18/) to create proportional symbology (set the frequency column of the TSV file as the basis for the sizes of the points):  
 
