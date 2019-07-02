@@ -88,7 +88,7 @@ I substituted "\t" for " >> " for easier readability. The result looks like this
 
 ![](/img/text_to_map1.png)  
 
-Meanwhile, a new version of the solution was published on the [website](https://univie-tnt-2019.github.io/11/) which made it easier to use the data for the next assignment as well. After the usual steps, a `generate` function is defined in order to separate the units (articles, advertizements, etc.) by the year of publication. Separate TSV files for each five years are created, which combine the frequency of each location (tgn ID) in the given year:
+Meanwhile, a new version of the solution was published on the [website](https://univie-tnt-2019.github.io/11/) which made it easier to use the data for the next assignment as well. After the usual steps, a `generate` function is defined in order to separate the units (articles, advertizements, etc.) by the year of publication. Separate TSV files for each five years are created, which combine frequencies with locations (tgn IDs) in the given year:
 ```python
 import re, os
 
@@ -152,7 +152,9 @@ generate("1865")
 The resulting files look like this:
 ![](/img/freq-tgn.png)  
 
-Following this, the TGN data has to be generated in order to match it with the frequency lists. The TGN data (XML format) is downloaded from the [Getty Vocabularies Download Center](http://tgndownloads.getty.edu/default.aspx) into the `source` folder.
+Following this, the TGN data has to be generated in order to match it with the frequency lists. The TGN data (XML format) is downloaded from the [Getty Vocabularies Download Center](http://tgndownloads.getty.edu/default.aspx) into the `source` folder. The data is read and split along the `</Subject>` final tag. Place IDs, place names, latitudes and longitudes are extracted using regular expressions and they are added to `tgnList`. If latitude and longitude is not available, the string "NA" (not available) is added and the entries are added to a separate list called `tgnListNA`:  
+
+```python
 import re, os
 
 source = "C:\\Users\\Siming\\Desktop\\siming\\AC_studies\\Tools and Techniques for Digital Humanities\\Class10_Text_to_map\\tgn\\"
@@ -206,7 +208,10 @@ def generateTGNdata(source):
                         if lat == "NA":
                             print("\t"+ "; ".join([placeID, placeName, lat, lon]))
                             tgnListNA.append("\t".join([placeID, placeName, lat, lon]))
+```  
 
+Two TSV files (tgn_data_light.tsv, tgn_data_light_NA.tsv) are created based on the `tgnList` and `tgnListNA`, both with the header `tgnID\tplacename\tlat\tlon\n`:
+```python
     # saving
     header = "tgnID\tplacename\tlat\tlon\n"
 
@@ -222,7 +227,9 @@ generateTGNdata(source)
 
 #TGN has 2,487,572 items
 #    17,613 items do not have coordinates.
-In the next step, `loadTGN` is defined to load TGN data into a dictionary:
+```  
+
+In the next step, `loadTGN` is defined to load the TGN data into a dictionary:
 ```python
 import re, os
 
@@ -240,4 +247,64 @@ def loadTGN(tgnTSV):
     return(dic)
 ```  
 
-After this, `match` is defined for matching 
+After this, `match` is defined for matching frequencies of the Dispatch locations with the TGN dictionary. The code starts with opening the frequency list TSV file, splitting it by `\t` (starting from the second row to exclude the header) and naming the second column `tgnID`. If `tgnID` from the frequency list can be found in the TGN dictionary, the ID is joined with the frequency in a variable named `val`. If "NA" appears in `val` (meaning that the coordinates are not available, see above), `val` is appended to the list for entries without coordinates, named `dataNewNA`. Else, `val` is appended to the list `dataNew`:
+```python
+target = "C:\\Users\\Siming\\Desktop\\PERSEUS2\\Perseus_CSV\\"
+
+def match(freqFile, dicToMatch):
+    with open(freqFile, "r", encoding="utf8") as f1:
+        data = f1.read().split("\n")
+
+        dataNew = []
+        dataNewNA = []
+        count = 0
+
+        for d in data[1:]:
+            tgnID = d.split("\t")[1]
+            freq  = d.split("\t")[0]
+
+            if tgnID in dicToMatch:
+                val = "\t".join(dicToMatch[tgnID])
+                val  = val + "\t" + freq
+
+                if "\tNA\t" in val:
+                    dataNewNA.append(val)
+                else:
+                    dataNew.append(val)
+            else:
+                print("%s (%d) not in TGN!" % (tgnID, int(freq)))
+                count += 1
+```  
+
+The two TSV files `coord.tsv` and `coord_NA.tsv` (for entries without coordinates) is created, with the header `tgnID\tplacename\tlat\tlon\tfreq\n`:  
+```python
+    header = "tgnID\tplacename\tlat\tlon\tfreq\n"
+
+    with open(target+"coord.tsv", "w", encoding="utf8") as f9a:
+        f9a.write(header + "\n".join(dataNew))
+
+    with open(target+"coord_NA.tsv", "w", encoding="utf8") as f9b:
+        f9b.write(header + "\n".join(dataNewNA))
+
+    print("%d item have not been matched..." % count)
+```
+The `loadTGN` and `match` functions are applied in the following way:
+```python
+target = "C:\\Users\\Siming\\Desktop\\PERSEUS2\\Perseus_CSV\\"
+
+dictionary = loadTGN(target+"tgn_data_light.tsv")
+
+match(target+"dispatch_toponyms_1861.tsv", dictionary)
+match(target+"dispatch_toponyms_1862.tsv", dictionary)
+match(target+"dispatch_toponyms_1863.tsv", dictionary)
+match(target+"dispatch_toponyms_1864.tsv", dictionary)
+match(target+"dispatch_toponyms_1865.tsv", dictionary)
+```  
+The resulting TSV files look like this:  
+![](/img/coord.png)  
+
+![](/img/coordNA.png)  
+
+Following this, I opened QGIS, added the raster layer we used for the Georeferencing assignment (1843 US map), clicked on 'Add Delimited Text Layer' and added `coord.tsv`. I followed the instructions on [this website](http://learngis.uk/proportional-symbol-map-qgis-2-18/) to create proportional symbology (set the frequency column of the TSV file as the basis for the sizes of the points):  
+
+![](/img/qgis1.png)
