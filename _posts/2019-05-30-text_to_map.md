@@ -314,6 +314,10 @@ The resulting TSV files look like this (examples of the 1865, 1865-12 and 1865-1
 
 ![](/img/toponymcoordna1865-12-30.png)  
 
-Following this, I opened QGIS, added the raster layer we used for the Georeferencing assignment (1843 US map), clicked on 'Add Delimited Text Layer' and added `coord.tsv`. I followed the instructions on [this website](http://learngis.uk/proportional-symbol-map-qgis-2-18/) to create proportional symbology (set the frequency column of the TSV file as the basis for the sizes of the points):  
+Following this, I opened QGIS, added the raster layer we used for the Georeferencing assignment (1843 US map), clicked on 'Add Delimited Text Layer' and added the three `_coord.tsv` files on 1865, 1865-12 and 1865-12-30. I followed the instructions on [this website](http://learngis.uk/proportional-symbol-map-qgis-2-18/) to create proportional symbology (set the frequency column of the TSV files as the basis for the sizes of the points):  
 
-![](/img/qgis1.png)
+![](/img/qgis65.png)  
+
+![](/img/qgis12.png)  
+
+![](/img/qgis12-30.png)  
