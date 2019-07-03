@@ -4,7 +4,7 @@ title: Class 10 - Some issues with QGIS
 ---
 
 A reoccurring problem while using QGIS was that when I was trying to add a delimited text layer to the Google Maps layer, it basically 
-loaded all the points on a minimum scale around the 0 degree of the coordinate system (thus, not far from Sao Tome and Principe in the 
+loaded all the points on a minimal scale around the 0 degree of the coordinate system (thus, not far from Sao Tome and Principe in the 
 Gulf of Guinea). I used a TSV file in the following format created through the `match` function used in the text-to-map assignments:  
 
 ![](/img/coord_qgis.png)  
