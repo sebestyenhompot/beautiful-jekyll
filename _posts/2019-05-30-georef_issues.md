@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Class 10 - Some issues related to QGIS
+title: Class 10 - Some issues with QGIS
 ---
 
 A reoccurring problem while using QGIS was that when I was trying to add a delimited text layer to the Google Maps layer, it basically 
