@@ -4,7 +4,7 @@ title: About me
 ---
 
 ### Introduction
-I am currently enrolled for the second year of the Erasmus Mundus Global Studies MA program at the University of Vienna. I have been admitted to the PhD program in Sinology at the University of Vienna starting from October 2019. My primary research interest is global history with a focus on China, especially the exchange of goods, ideas and migration in pre-modern times. I created this website as an assignment of a digital tools & techniques course at the University of Vienna and will share my solutions for the assignments of the course here.
+I am currently enrolled as a Ph.D. candidate of Sinology at the University of Vienna. My dissertation project is the discourse analysis of recent (2000-) mainland Chinese historiography on the major maritime missions led by the Ming dynasty's imperial admiral [Zheng He](https://en.wikipedia.org/wiki/Zheng_He) between 1405 and 1433. The maritime missions included visits to port cities located in Southeast Asia, South Asia, the Middle East, and East Africa, and became increasingly widely discussed in the current context of China's (re)emergence as a regional and global power. My research interests include Ming-Qing Chinese history, recent Chinese historiography, global history, discourse analysis, digital humanities.  
 
 
 ### Personal data
@@ -13,11 +13,17 @@ I am currently enrolled for the second year of the Erasmus Mundus Global Studies
 
 
 ### Educational background
-* 2010-2014: BA in "Eastern Languages and Cultures, Chinese Specialization" at ELTE University (Hungary)
-* 2014-2017: MA in "Chinese Language and Scripts (汉语言文字学)" at Xiamen University 厦门大学 (China)
-* 2017-2018: MA (first year) in "Global Studies" at Ghent University (Belgium)
-* 2018-: MA (second year) in "Global Studies" at University of Vienna (Austria)  
+* 2010-2014: BA in Eastern Languages and Cultures, Chinese Specialization at ELTE University, Budapest (Hungary)
+* 2014-2017: MA in Chinese Language and Scripts (汉语言文字学) at Xiamen University 厦门大学 (China)
+* 2017-2019: MA in Global Studies - A European Perspective at Ghent University (Belgium) and University of Vienna (Austria)
+* 2019-: PhD in Sinology at University of Vienna (Austria)  
 
 
-### Current project
-Currently I am working on my MA thesis. The topic of my MA thesis is the critical discourse analysis of current mainland Chinese academic discourse on China's pre-modern [tributary system](https://en.wikipedia.org/wiki/Imperial_Chinese_Tributary_System). The chosen topic of my future PhD dissertation is the critical discourse analysis of current Chinese historiography on the voyages of 15th century Muslim Chinese admiral [Zheng He](https://en.wikipedia.org/wiki/Zheng_He) around the Indo-Pacific maritime region, visiting various ports in Southeast Asia, South Asia, the Middle East and East Africa.
+### Links
+[LinkedIn](https://www.linkedin.com/in/sebesty%C3%A9n-hompot-84b00ba1/)  
+
+
+### CV
+For further information see my [CV]() (updated on 2020-07-19).
+
+
