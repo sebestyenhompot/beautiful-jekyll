@@ -24,6 +24,6 @@ I am currently enrolled as a Ph.D. candidate of Sinology at the University of Vi
 
 
 ### CV
-For further information see my [CV]() (updated on 2020-07-19).
+For further information see my [CV](img/Sebestyen_Hompot_CV_academic-converted.pdf) (updated on 2020-07-19).
 
 
