@@ -19,11 +19,11 @@ I am currently enrolled as a Ph.D. candidate of Sinology at the University of Vi
 * 2019-: PhD in Sinology at University of Vienna (Austria)  
 
 
-### Links
+### Links  
 [LinkedIn](https://www.linkedin.com/in/sebesty%C3%A9n-hompot-84b00ba1/)  
 
 
-### CV
+### CV  
 For further information see my [CV](/img/Sebestyen_Hompot_CV_academic-converted.pdf) (updated on 2020-07-19).
 
 
