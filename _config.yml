@@ -26,8 +26,6 @@ navbar-links:
   About Me: "aboutme"
   Resources:
   - Hokkien Project: "https://zenodo.org/record/2631767"
-  - Zheng He Project: "/Hompot_Zheng_He_project_R.html"
-  Author's home: "https://www.facebook.com/sebestyen.hompot"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
