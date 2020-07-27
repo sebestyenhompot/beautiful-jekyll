@@ -6,7 +6,7 @@ title: About me
 ### Introduction
 I am currently enrolled as a Ph.D. candidate of Sinology at the University of Vienna. My dissertation project is the discourse analysis of recent (2000-) mainland Chinese historiography on the major maritime missions led by the Ming dynasty's imperial admiral [Zheng He](https://en.wikipedia.org/wiki/Zheng_He) between 1405 and 1433. The maritime missions included visits to port cities located in Southeast Asia, South Asia, the Middle East, and East Africa, and became increasingly widely discussed in the current context of China's (re)emergence as a regional and global power. My research interests include Ming-Qing Chinese history, recent Chinese historiography, global history, discourse analysis, digital humanities.  
 
-The present website was originally created for the course ['Tools and Techniques of Digital Humanities'](https://ufind.univie.ac.at/de/course.html?lv=070146&semester=2019S) taught by Prof. Maxim Romanov at the University of Vienna in the summer semester of 2019. The earlier posts include the assignments for that course.  
+The present website was originally created for the course [Tools and Techniques of Digital Humanities](https://ufind.univie.ac.at/de/course.html?lv=070146&semester=2019S) taught by Prof. Maxim Romanov at the University of Vienna in the summer semester of 2019. The earlier posts include the assignments for that course.  
 
 
 ### Personal data
